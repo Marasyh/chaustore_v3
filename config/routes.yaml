@@ -1,3 +1,23 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+app_brand:
+    path: /brand
+    controller: App\Controller\BrandController::Brands
+
+app_color:
+    path: /color
+    controller: App\Controller\ColorController::Colors
+
+app_category:
+    path: /category
+    controller: App\Controller\CategoryController::Category
+
+app_product:
+    path: /product
+    controller: App\Controller\ProductController::Products
+
+app_size:
+    path: /size
+    controller: App\Controller\SizeController::Sizes
