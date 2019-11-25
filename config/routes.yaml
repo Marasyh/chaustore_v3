@@ -21,3 +21,11 @@ app_product:
 app_size:
     path: /size
     controller: App\Controller\SizeController::Sizes
+
+app_login:
+    path: /login
+    controller: App\Controller\LoginController::login
+
+app_index:
+    path: /index
+    controller: App\Controller\IndexControler::index

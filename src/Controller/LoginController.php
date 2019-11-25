@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
 use App\Entity\Login;
 use App\Form\Type\LoginType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -12,10 +13,11 @@ class LoginController extends AbstractController
     /**
      * @Route("/login", name="login")
      */
-    public function index()
+    public function login()
     {
-        $login = new login();
-        $form = $this->createForm(LoginType::class, $login);
+        $login= new index();
+        $form= $this->createForm(LoginType::class, $login);
+
         return $this->render('login/index.html.twig', [
             'form' => $form->createView(),
         ]);
