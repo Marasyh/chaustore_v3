@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello LoginController!{% endblock %}
+{% block title %}menu{% endblock %}
 
 {% block body %}
- <h1> ohohoh </h1>
- 
- {% endblock %}
+
+<a href="{{path('app_brand')}}">Brand</a>
+<a href="{{path('app_color')}}">Color</a>
+<a href="{{path('app_category')}}">Category</a>
+<a href="{{path('app_product')}}">Product</a>
+<a href="{{path('app_size')}}">Size</a>
+{% endblock %}
