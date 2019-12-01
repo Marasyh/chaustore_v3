@@ -27,3 +27,7 @@ app_login:
 app_index:
     path: /index
     controller: App\Controller\IndexController::index
+
+app_chaustore3:
+    path: /chaustore3
+    controller: App\Controller\Chaustore3Controller::index
